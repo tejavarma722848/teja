@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css lin
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <div class="sidebar-container">
+        <aside class="sidebar" data-sidebar>
+
+          <div class="sidebar-info">
+
+            <figure class="avatar-box">
+              <img src="./assets/images/teja.png" alt="Teja Penmetsa" width="80">
+            </figure>
+
+            <div class="info-content">
+              <h1 class="name" title="Teja Penmetsa">Teja Penmesta</h1>
+
+              <p class="title">Software Engineer</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+              <span>Show Contacts</span>
+
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Email</p>
+
+                  <a href="mailto:richard@example.com" class="contact-link">tejaoff23@gmail.com</a>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Phone</p>
+
+                  <a href="tel:+18722144785" class="contact-link">+1 (872) 214-4785</a>
+                </div>
+
+              </li>
+
+              <!--<li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Birthday</p>
+
+                  <time datetime="2000-08-08">Aug 08, 2000</time> 
+                </div>-->
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="icon-box">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="contact-info">
+                  <p class="contact-title">Location</p>
+
+                  <address>Nashua, NH, USA</address>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+
+              <li class="social-item">
+                <a href="https://www.linkedin.com/in/tejavarma08/" class="social-link" target="_blank">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="https://github.com/tejavarma722848" class="social-link" target="_blank">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+
+              <li class="social-item">
+                <a href="https://www.instagram.com/tejavarma08/?next=%2F&hl=en" class="social-link" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+        </aside>
+
+
+<!--         <aside class="sidebar skills-sidebar" data-sidebar>
+
+          <div class="sidebar-info">
+
+            <div class="info-content">
+              <h1 class="name">My Skills</h1>
+              <p class="title">Technical Expertise</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+              <span>Show Skills</span>
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Observability & Monitoring</p>
+                  <p class="contact-link">Grafana, Prometheus, Splunk, DataDog</p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="logo-python"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Programming</p>
+                  <p class="contact-link">Python, Java, C++, JavaScript</p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="cloud-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Cloud Platforms</p>
+                  <p class="contact-link">AWS, GCP, Azure</p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="cube-outline"></ion-icon>
+                </div>
+                <div class="contact-info">
+                  <p class="contact-title">Containers & Orchestration</p>
+                  <p class="contact-link">Docker, Kubernetes, OpenShift</p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </aside> -->
+    </div>
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            As an adept web developer with a passion for full-stack development, I am actively seeking new
+            opportunities to contribute my skills and expertise to dynamic projects. With a track record of
+            delivering high-quality solutions, I thrive in collaborative environments where I can contribute
+            to the team's success. I am known for my strong work ethic, dedication, and ability to adapt to
+            new challenges. My goal is to join a team where I can continue to grow professionally while making
+            meaningful contributions to the development process.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+<!--           <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Developer</h4>
+
+                <p class="service-item-text">
+                  Crafting modern and high-quality websites with a touch of finesse.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Developer</h4>
+
+                <p class="service-item-text">
+                  Developing robust and scalable applications for all platforms.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Implementing cutting-edge ML algorithms to tackle complex challenges.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul> -->
+              <ul class="service-list">
+
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/icon-dev.svg" alt="software engineer icon" width="40">
+                  </div>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">SDE — Drut Technologies</h4>
+                    <p class="service-item-text">
+                      Designed Python/Java microservices, built Grafana+Prometheus dashboards, authored SQL schemas, created exporters, automated deployments with Terraform/Ansible, and reduced setup time by 40%.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/icon-dev.svg" alt="sre icon" width="40">
+                  </div>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">SRE — Drut Networks</h4>
+                    <p class="service-item-text">
+                      Automated AWS/GCP provisioning with IaC, deployed Kubernetes+Helm apps, integrated Vault, built Prometheus/Grafana stacks, and improved CI/CD pipelines with Jenkins & RabbitMQ.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/icon-app.svg" alt="ml icon" width="40">
+                  </div>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">ML — PVH Software Solutions</h4>
+                    <p class="service-item-text">
+                      Engineered an intelligent email filtering system, showcasing NLP and ML expertise for production-grade classification tasks.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img src="./assets/images/icon-dev.svg" alt="internship icon" width="40">
+                  </div>
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">SDE— Invensis</h4>
+                    <p class="service-item-text">
+                      Built Python/Django REST APIs, React.js/Next.js UIs, optimized SQL/NoSQL databases, documented APIs, and improved CI/CD pipelines with Jenkins, Selenium, and Postman.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Srinivas" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Santosh</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    His dedication to developing tailored Rest APIs, coupled with his collaborative approach in
+                    ensuring optimal solutions, significantly enhanced our system efficiency. Teja's expertise in API
+                    documentation
+                    and his attention to detail played a crucial role in streamlining client interaction, resulting in a
+                    notable reduction in client onboarding time.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/kiruba.png" alt="Kiruba Shanker" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pavan</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Teja's proficiency in front-end development and his ability to translate design concepts
+                    into polished code significantly enhanced the user experience of our website. Teja's technical
+                    competence, problem-solving skills, and collaborative approach make him a valuable
+                    asset to any organization.
+
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - skills
+        -->
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Illinois, Chicago</h4>
+              <p class="timeline-text">
+                Masters
+              </p>
+              <span>2022 — 2024 (Current)</span>
+
+              <p class="timeline-text">
+                CGPA - 3.77/4
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Visvesvaraya Technological University, India</h4>
+
+              <p class="timeline-text">
+                Under Graduation
+              </p>
+              <span>2018-2022</span>
+
+              <p class="timeline-text">
+                CGPA - 8.9/10
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer</h4>
+
+              <span>June2024-Present</span>
+
+              <p class="timeline-text">
+              Delivered end-to-end monitoring solutions using Prometheus, Grafana, and custom exporters, enabling proactive detection and faster resolution of infrastructure issues.              
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Site Reliability Engineer</h4>
+
+              <span>May2023-Aug2023</span>
+
+              <p class="timeline-text">
+              Automated Kubernetes deployments with Ansible/Helm, integrated monitoring with Prometheus/Grafana, and secured pipelines with Vault.              
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Machine Learning Internship</h4>
+
+              <span>Oct2021-Mar2022</span>
+
+              <p class="timeline-text">
+                Engineered an email filtering system, showcasing machine learning expertise at PVH Software Solutions.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer </h4>
+
+              <span>Sept2020-May2021</span>
+
+              <p class="timeline-text">
+                Developed dynamic websites and optimized front-end performance. Built scalable React + Django apps with APIs, boosting engagement and streamlining workflows.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3">My Skills</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Cloud</h4>
+              <p class="timeline-text">GCP, AWS, Azure</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Operating Systems</h4>
+              <p class="timeline-text">Linux, Windows, MacOS</p>
+<!--               <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div> -->
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">IAC</h4>
+              <p class="timeline-text">Terraform, Cloud-Formation, Bicep, Ansible, Chef, Puppet, RabbitMQ, Hashi-Corp</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data & Analytics</h4>
+              <p class="timeline-text">Data Analytics, Data Warehousing, ETL, PL/SQL, SQL (MySQL), NoSQL (MongoDB), NumPy, Pandas, Scikit-learn, NLP</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Monitoring, Logging & Observability</h4>
+              <p class="timeline-text">Grafana, DataDog, Prometheus, New Relic, Splunk, Node Exporter, Black Box</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CI/CD Tools</h4>
+              <p class="timeline-text">Jenkins, GitHub Actions, Argo CD, Azure DevOps, Code Build, BitBucket, Jira, Confluence</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Databases</h4>
+              <p class="timeline-text">SQL (MySQL), NoSQL (MongoDB), Database fundamentals, Caching</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Frameworks</h4>
+              <p class="timeline-text">React.js, Responsive UI, REST APIs, Microservices, Figma, Django, NodeJs, Spring</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Programming Languages</h4>
+              <p class="timeline-text">Python, Java, C++, HTML, CSS, JavaScript, OOP, Bash/Shell</p>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://elastic-sinoussi-236a7e.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/hotel.jpg" alt="hotel" loading="lazy" >
+                </figure>
+ 
+                <h3 class="project-title">Hotel Management Portal</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://calenderevent.netlify.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calender Events</h3>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://sudokuappgame.netlify.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sud.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sudoku Game</h3>
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://simplecandycrushgame.netlify.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/candy.webp" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Candy Crush</h3>
+
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://tesladashboardprjct.netlify.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/tesla.jpeg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Telsa</h3>
+<!-- 
+                <p class="project-category">Web design</p> -->
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="tejatodolist.netlify.app" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">TodoList</h3>
+
+                <!-- <p class="project-category">Web design</p> -->
+
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+     
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.012345678901!2d-71.4671234!3d42.7475678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3f7f1c1234567%3A0xabcdef1234567890!2s321%20Brook%20Village%20Rd%2C%20Nashua%2C%20NH%2003063%2C%20USA!5e0!3m2!1sen!2sus!4v1694076000000!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Get In Touch With</h3>
+          <li class="contact-images">
+            <div class="contact-image">
+              <a href="mailto:tejaoff23@gmail.com?subject=Message%20from%20Website&body=Hello,%0D%0A%0D%0AI%20am%20interested%20in%20your%20services.%20Please%20get%20back%20to%20me.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]">
+                <img src="./assets/images/gmail.png"" alt="Gmail" class="gmail-image">
+              </a>
+            </div>
+            <div class="contact-image-linkedin">
+              <a href="https://www.linkedin.com/in/tejavarma08/" class="social-link" target="_blank">
+                <img src="./assets/images/linkedin.png" alt="linkedin" class="linkedin">
+              </a>
+            </div>
+          </li>            
+        </section>
+          
+       
+        
+
+        
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
